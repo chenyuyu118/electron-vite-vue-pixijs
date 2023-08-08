@@ -49,8 +49,14 @@ async function createWindow() {
       // Warning: Enable nodeIntegration and disable contextIsolation is not secure in production
       // Consider using contextBridge.exposeInMainWorld
       // Read more on https://www.electronjs.org/docs/latest/tutorial/context-isolation
-      nodeIntegration: true,
-      contextIsolation: false,
+      /* 😊
+        It works when config like this
+          nodeIntegration: true,
+          contextIsolation: false,
+       */
+      // 😢 Doesn't work now
+      nodeIntegration: false,
+      contextIsolation: true,
     },
   })
 

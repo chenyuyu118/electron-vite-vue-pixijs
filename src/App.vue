@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import {Application} from "pixi.js";
+
+console.log(Application)
 </script>
 
 <template>
